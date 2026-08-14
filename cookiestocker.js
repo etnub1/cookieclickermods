@@ -62,7 +62,7 @@ const CS_PLASMIC_PROFITS = 100000000;			// $100,000,000
 const CS_BOSE_EINSTEIN_PROFITS = 500000000;		// $500,000,000
 
 if (typeof CCSE === 'undefined')
-	Game.LoadMod('https://klattmose.github.io/CookieClicker/SteamMods/CCSE/main.js')
+	Game.LoadMod('https://cdn.jsdelivr.net/gh/etnub1/cookieclickermods@5/ccse.js')
 
 if (typeof CookiStocker === 'undefined') var CookiStocker = {};
 
@@ -286,7 +286,7 @@ CookiStocker._onMarketTick = function() {
 		CookiStocker._reportTimeout = setTimeout(function() {
 			try { CookiStocker.Reports(); } catch (e) {}
 		}, delay);
-	}, 500);	// let the minigame finish its own recompute
+	}, 500);	//f let the minigame finish its own recompute
 };
 
 CookiStocker.installBankTickHook = function() {
